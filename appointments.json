@@ -1,0 +1,39 @@
+{
+  "appointments": [ {
+      "address": "Av. Nove de Julho, 287 - Bela Vista, São Paulo - SP",
+      "patientName": "Aline de Souza",
+      "dateTime": "05/07/2020 às 14:30",
+      "state": "scheduled"
+    },
+     {
+      "address": "Av. dos Ourives, 395 - Parque Bristol, São Paulo - SP",
+      "patientName": "Tiago José Pinheiros",
+      "dateTime": "05/07/2020 às 16:00",
+      "state": "scheduled"
+    },
+     {
+      "address": "Av. Paulista, 1009 - Bela Vista, São Paulo - SP",
+      "patientName": "Artur Oliveira Santos",
+      "dateTime": "05/07/2020 às 18:30",
+      "state": "scheduled"
+    },
+     {
+      "address": "Rua Conde de Porto Alegre, 1095 - Campo Belo, São Paulo - SP",
+      "patientName": "Rafaela Nogueira",
+      "dateTime": "06/07/2020 às 09:30",
+      "state": "scheduled"
+    },
+     {
+      "address": "Av. Santo Amaro, 2468 - Brooklin, São Paulo - SP",
+      "patientName": "Luciano Couto Moraes",
+      "dateTime": "06/07/2020 às 11:00",
+      "state": "scheduled"
+    },
+     {
+      "address": "Av. Brg. Faria Lima, 2705 - Jardim Paulistano, São Paulo - SP",
+      "patientName": "Kalleu Roberto Silva",
+      "dateTime": "07/07/2020 às 12:00",
+      "state": "scheduled"
+    }
+  ]
+}
