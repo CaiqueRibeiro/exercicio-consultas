@@ -21,7 +21,7 @@ const MainRoutes: React.FC = () => (
   >
     <MainNav.Screen name="Home" component={Home} />
     <MainNav.Screen name="CheckIn" component={CheckIn} />
-    <MainNav.Screen name="Appointment" component={Appointment} />
+    <MainNav.Screen name="Consulta" component={Appointment} />
   </MainNav.Navigator>
 );
 

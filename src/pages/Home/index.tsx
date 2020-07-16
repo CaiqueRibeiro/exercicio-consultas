@@ -54,7 +54,8 @@ const Home: React.FC = () => {
         renderItem={({ item }) => (
           <AppointmentContainer
             onPress={() =>
-              navigation.navigate('CheckIn', { appointment: item })}
+              navigation.navigate('CheckIn', { appointment: item })
+            }
           >
             <AppointmentText>
               <Text style={{ fontWeight: 'bold' }}>PACIENTE: </Text>

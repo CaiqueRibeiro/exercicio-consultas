@@ -35,6 +35,7 @@ const CheckIn: React.FC = () => {
   });
 
   const route = useRoute();
+
   const navigation = useNavigation();
 
   useEffect(() => {
@@ -62,7 +63,7 @@ const CheckIn: React.FC = () => {
       err => Alert.alert(JSON.stringify(err)),
       { enableHighAccuracy: true, timeout: 2000, maximumAge: 1000 },
     );
-  }, [myPosition]);
+  }, []);
 
   function handleChangePatientPosition(value: string): void {
     const newData = {
@@ -86,10 +87,9 @@ const CheckIn: React.FC = () => {
           region={{
             latitude: myPosition.latitude,
             longitude: myPosition.longitude,
-            latitudeDelta: 0.006,
-            longitudeDelta: 0.006,
+            latitudeDelta: 0.004,
+            longitudeDelta: 0.004,
           }}
-          showsUserLocation
           loadingEnabled
           toolbarEnabled
           zoomControlEnabled
@@ -126,7 +126,7 @@ const CheckIn: React.FC = () => {
               longitude: clientPosition.longitude,
             }}
             apikey={GOOGLE_MAPS_API_KEY}
-            strokeWidth={3}
+            strokeWidth={4}
             strokeColor="#3498db"
           />
         </MapView>
@@ -136,10 +136,9 @@ const CheckIn: React.FC = () => {
 
       <CheckInButton
         onPress={() =>
-          navigation.navigate('Appointment', {
+          navigation.navigate('Consulta', {
             appointment: route.params.appointment,
-          })
-        }
+          })}
       >
         <CheckInButtonText>Check-in</CheckInButtonText>
       </CheckInButton>
